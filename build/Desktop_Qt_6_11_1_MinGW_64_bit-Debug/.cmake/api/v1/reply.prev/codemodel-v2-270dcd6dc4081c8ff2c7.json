@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e4ea094def1c30081a27.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LibManage",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LibManage::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibManage-Debug-60dbf43bf7377a9650fe.json",
+					"name" : "LibManage",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LibManage_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibManage_autogen-Debug-f7f6b9913e949a70a00a.json",
+					"name" : "LibManage_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LibManage_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibManage_autogen_timestamp_deps-Debug-621eb0b71a567cd9342c.json",
+					"name" : "LibManage_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/first/LibManage/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug",
+		"source" : "D:/first/LibManage"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
