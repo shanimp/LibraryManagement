@@ -144,11 +144,13 @@ public:
         QFont font4;
         font4.setFamilies({QString::fromUtf8("Calibri")});
         font4.setPointSize(36);
-        font4.setBold(true);
+        font4.setWeight(QFont::Black);
         label->setFont(font4);
         label->setAutoFillBackground(false);
-        label->setStyleSheet(QString::fromUtf8("color: rgb(0, 24, 0);\n"
+        label->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(255, 255, 255);\n"
 "\n"
+"font-weight: 900;\n"
 "\n"
 ""));
         label->setAlignment(Qt::AlignmentFlag::AlignCenter);
@@ -158,14 +160,16 @@ public:
         label_2->setFont(font4);
         label_2->setAutoFillBackground(false);
         label_2->setStyleSheet(QString::fromUtf8("\n"
-"color: rgb(0, 24, 0);"));
+"color: rgb(255, 255, 255);\n"
+"font-weight: 900;"));
         label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(100, 240, 171, 71));
         label_3->setFont(font4);
         label_3->setStyleSheet(QString::fromUtf8("\n"
-"color: rgb(0, 24, 0);"));
+"color: rgb(255, 255, 255);\n"
+"font-weight: 900;"));
         label_3->setAlignment(Qt::AlignmentFlag::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);

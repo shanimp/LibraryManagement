@@ -238,15 +238,17 @@ QPushButton:hover {
      <font>
       <family>Calibri</family>
       <pointsize>36</pointsize>
-      <bold>true</bold>
+      <fontweight>Black</fontweight>
      </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 24, 0);
+     <string notr="true">
+color: rgb(255, 255, 255);
 
+font-weight: 900;
 
 </string>
     </property>
@@ -270,7 +272,7 @@ QPushButton:hover {
      <font>
       <family>Calibri</family>
       <pointsize>36</pointsize>
-      <bold>true</bold>
+      <fontweight>Black</fontweight>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -278,7 +280,8 @@ QPushButton:hover {
     </property>
     <property name="styleSheet">
      <string notr="true">
-color: rgb(0, 24, 0);</string>
+color: rgb(255, 255, 255);
+font-weight: 900;</string>
     </property>
     <property name="text">
      <string>Management</string>
@@ -300,12 +303,13 @@ color: rgb(0, 24, 0);</string>
      <font>
       <family>Calibri</family>
       <pointsize>36</pointsize>
-      <bold>true</bold>
+      <fontweight>Black</fontweight>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">
-color: rgb(0, 24, 0);</string>
+color: rgb(255, 255, 255);
+font-weight: 900;</string>
     </property>
     <property name="text">
      <string>System</string>
