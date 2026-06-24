@@ -13,6 +13,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
+        MainWindow.setMaximumSize(QtCore.QSize(16777100, 16777100))
         MainWindow.setStyleSheet("background-color: #F0FDF4;")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -168,7 +169,13 @@ class Ui_MainWindow(object):
         self.radioAuthor.setObjectName("radioAuthor")
         self.frame = QtWidgets.QFrame(parent=self.centralwidget)
         self.frame.setGeometry(QtCore.QRect(0, 0, 141, 571))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy)
         self.frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame.setBaseSize(QtCore.QSize(0, 0))
         self.frame.setStyleSheet("background-color: #15803D")
         self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
@@ -187,9 +194,15 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         font.setBold(True)
         self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);")
         self.label.setObjectName("label")
         self.btnadd = QtWidgets.QPushButton(parent=self.frame)
-        self.btnadd.setGeometry(QtCore.QRect(-2, 100, 91, 41))
+        self.btnadd.setGeometry(QtCore.QRect(-2, 100, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.btnadd.setFont(font)
         self.btnadd.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    color: white;\n"
@@ -204,7 +217,11 @@ class Ui_MainWindow(object):
 "}")
         self.btnadd.setObjectName("btnadd")
         self.btnedit = QtWidgets.QPushButton(parent=self.frame)
-        self.btnedit.setGeometry(QtCore.QRect(-1, 138, 91, 31))
+        self.btnedit.setGeometry(QtCore.QRect(-1, 138, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.btnedit.setFont(font)
         self.btnedit.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    color: white;\n"
@@ -219,7 +236,11 @@ class Ui_MainWindow(object):
 "}")
         self.btnedit.setObjectName("btnedit")
         self.btndelete = QtWidgets.QPushButton(parent=self.frame)
-        self.btndelete.setGeometry(QtCore.QRect(-2, 166, 101, 41))
+        self.btndelete.setGeometry(QtCore.QRect(-2, 166, 121, 41))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.btndelete.setFont(font)
         self.btndelete.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    color: white;\n"
@@ -235,6 +256,10 @@ class Ui_MainWindow(object):
         self.btndelete.setObjectName("btndelete")
         self.btnview = QtWidgets.QPushButton(parent=self.frame)
         self.btnview.setGeometry(QtCore.QRect(0, 197, 91, 41))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.btnview.setFont(font)
         self.btnview.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    color: white;\n"
@@ -250,6 +275,10 @@ class Ui_MainWindow(object):
         self.btnview.setObjectName("btnview")
         self.btnothers = QtWidgets.QPushButton(parent=self.frame)
         self.btnothers.setGeometry(QtCore.QRect(0, 230, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.btnothers.setFont(font)
         self.btnothers.setStyleSheet("QPushButton {\n"
 "    background-color: transparent;\n"
 "    color: white;\n"
@@ -263,6 +292,25 @@ class Ui_MainWindow(object):
 "    background-color: #166534;\n"
 "}")
         self.btnothers.setObjectName("btnothers")
+        self.pushButton = QtWidgets.QPushButton(parent=self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(0, 73, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"    background-color: transparent;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    text-align: left;\n"
+"    padding: 10px;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #166534;\n"
+"}")
+        self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -306,3 +354,4 @@ class Ui_MainWindow(object):
         self.btndelete.setText(_translate("MainWindow", "Delete Books"))
         self.btnview.setText(_translate("MainWindow", "View"))
         self.btnothers.setText(_translate("MainWindow", "others"))
+        self.pushButton.setText(_translate("MainWindow", "Home"))

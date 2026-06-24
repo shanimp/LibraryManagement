@@ -35,6 +35,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Addbooks.py
         Searchbooks.ui
         Searchbooks.py
+        Editbooks.ui
 
 
 

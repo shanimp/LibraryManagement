@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-e4ea094def1c30081a27.json",
+					"jsonFile" : "directory-.-Debug-fc092849d940807d9877.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LibManage::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LibManage-Debug-46d018f7ae1032ba840a.json",
+					"jsonFile" : "target-LibManage-Debug-55773e0deb41fde1009d.json",
 					"name" : "LibManage",
 					"projectIndex" : 0
 				},
